@@ -92,6 +92,8 @@ module.exports.EmailEvent = class EmailEvent {
     }
 
     const fbd = await fb(this.facebook.id)
+    console.log(fdb)
+    return
     // Populate with facebook data
     if (!this.hasImage) {
       this.image = fbd.cover.source
